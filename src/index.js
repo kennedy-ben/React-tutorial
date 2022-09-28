@@ -1,17 +1,60 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Header(){
+  return(
+    <header>
+      <nav className="nav">
+          <img src="logo192.png" alt="react logo" width="40px"/>
+          <ul className="nav-items">
+              <li>Pricing</li>
+              <li>About</li>
+              <li>Contact</li>
+          </ul>
+      </nav>
+  
+    </header>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  )
+}
+
+function Footer(){
+  return(
+    <footer>
+          <small>
+            @2022 Kenben dev projects
+          </small>
+    </footer>
+
+  )
+}
+
+function MainContent(){
+  return(
+
+    <div>
+        <h1>Importance Of Learning React</h1>
+          <ol>
+              <li>You can be hired easily </li>
+              <li>Is simple than Angular</li>
+              <li>Others search for your own</li>
+          </ol>
+    </div>
+    
+    
+  )
+}
+
+function Page() {
+    return(
+    <div>
+        <Header/>      
+        <MainContent/>
+        <Footer/>
+    </div>
+  );
+}
+
+
+
+ReactDOM.render(<Page/>, document.getElementById('root'))
