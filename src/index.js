@@ -1,26 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-function Header(){
-  return(
-    <header>
-      <nav className="nav">
-          <img src="logo192.png" alt="react logo" width="40px"/>
-          <ul className="nav-items">
-              <li>Pricing</li>
-              <li>About</li>
-              <li>Contact</li>
-          </ul>
-      </nav>
-  
-    </header>
-
-  )
-}
+import '../src/style.css'
+import './Header'
 
 function Footer(){
   return(
-    <footer>
+    <footer className="footer">
           <small>
             @2022 Kenben dev projects
           </small>
@@ -32,7 +17,7 @@ function Footer(){
 function MainContent(){
   return(
 
-    <div>
+    <div className='body-content'>
         <h1>Importance Of Learning React</h1>
           <ol>
               <li>You can be hired easily </li>
@@ -46,11 +31,11 @@ function MainContent(){
 }
 
 function Page() {
-    return(
+    return (
     <div>
-        <Header/>      
-        <MainContent/>
-        <Footer/>
+        <Header />      
+        <MainContent />
+        <Footer />
     </div>
   );
 }
