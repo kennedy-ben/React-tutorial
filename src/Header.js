@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Header(){
+ export default function Header(){
     return(
       <header>
         <nav className="nav">
@@ -16,5 +16,3 @@ export default function Header(){
   
     )
   }
-
- 
