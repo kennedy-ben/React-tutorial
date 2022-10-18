@@ -4,7 +4,7 @@ import React from "react"
     return(
       <header>
         <nav className="nav">
-            <img src="logo192.png" alt="react logo" className="nav-logo"/>
+            <img src="sheds.jpg" alt="sheds pic" className="nav-logo"/>
             <ul className="nav-items">
                 <li>Pricing</li>
                 <li>About</li>
